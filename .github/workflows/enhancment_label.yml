@@ -1,5 +1,4 @@
 name: Auto Label Enhancement
-
 on:
   issues:
     types: [opened]
