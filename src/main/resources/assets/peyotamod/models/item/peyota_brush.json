@@ -1,0 +1,52 @@
+{
+	"textures": {
+		"0": "peyotamod:item/peyota_brush",
+		"particle": "peyota_brush"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 4, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 0, -1]},
+			"faces": {
+				"north": {"uv": [4, 7, 6, 11], "texture": "#0"},
+				"east": {"uv": [6, 7, 8, 11], "texture": "#0"},
+				"south": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"west": {"uv": [8, 7, 10, 11], "texture": "#0"},
+				"up": {"uv": [12, 10, 10, 8], "texture": "#0"},
+				"down": {"uv": [12, 10, 10, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 4, 7],
+			"to": [11, 5, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 4, -1]},
+			"faces": {
+				"north": {"uv": [8, 4, 14, 5], "texture": "#0"},
+				"east": {"uv": [4, 11, 6, 12], "texture": "#0"},
+				"south": {"uv": [10, 7, 16, 8], "texture": "#0"},
+				"west": {"uv": [6, 11, 8, 12], "texture": "#0"},
+				"up": {"uv": [6, 7, 0, 5], "texture": "#0"},
+				"down": {"uv": [12, 5, 6, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 5, 7],
+			"to": [10, 10, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 5, -1]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 5], "texture": "#0"},
+				"east": {"uv": [0, 7, 2, 12], "texture": "#0"},
+				"south": {"uv": [4, 0, 8, 5], "texture": "#0"},
+				"west": {"uv": [2, 7, 4, 12], "texture": "#0"},
+				"up": {"uv": [14, 2, 10, 0], "texture": "#0"},
+				"down": {"uv": [14, 2, 10, 4], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 5.25, 0]
+		}
+	}
+}
