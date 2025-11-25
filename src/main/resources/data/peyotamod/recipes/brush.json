@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    " # ",
+    " X ",
+    " I "
+  ],
+  "result": {
+    "item": "peyotamod:peyota_brush",
+    "count": 1
+  },
+  "show_notification": true
+}
