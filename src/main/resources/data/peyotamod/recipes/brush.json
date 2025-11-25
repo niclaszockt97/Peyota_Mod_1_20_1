@@ -13,9 +13,9 @@
     }
   },
   "pattern": [
-    " # ",
+    "  #",
     " X ",
-    " I "
+    "I  "
   ],
   "result": {
     "item": "peyotamod:peyota_brush",
