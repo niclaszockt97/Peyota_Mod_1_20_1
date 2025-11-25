@@ -1,0 +1,17 @@
+name: Auto Label Enhancement
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, 'Enhancement')
+    steps:
+      - name: Add enhancement label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels:
+            - enhancement
