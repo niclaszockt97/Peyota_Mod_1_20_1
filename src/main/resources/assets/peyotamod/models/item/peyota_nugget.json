@@ -1,5 +1,5 @@
 {
-
+    "parent": "minecraft:block/cube_all",
 	"textures": {
 		"0": "peyotamod:item/peyota_nugget",
 		"particle": "peyota_nugget"

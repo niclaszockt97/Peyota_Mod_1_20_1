@@ -1,6 +1,8 @@
 {
   "creativetab.peyota_tab": "Peyota",
 
+  "block.peyotamod.peyota_workbench": "Workbench",
+  "block.peyotamod.peyota_workbench_2": "Worktable",
   "item.peyotamod.peyota_nugget": "Peyota Nugget",
   "item.peyotamod.peyota_brush": "Brush"
 }
