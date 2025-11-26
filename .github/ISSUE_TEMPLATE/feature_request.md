@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the enhancment**
-A clear and concise description of what the bug is.
+A clear and concise description of what the enhancment is.
 
 **Additional context**
-Add any other context about the problem here.
+Add any other context about the enhancment here.
