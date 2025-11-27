@@ -1,4 +1,5 @@
 {
+    "parent": "minecraft:block/cube_all",
 	"textures": {
 		"0": "peyotamod:item/peyota_brush",
 		"particle": "peyota_brush"
