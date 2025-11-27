@@ -1,8 +1,7 @@
 {
     "parent": "minecraft:block/cube_all",
 	"textures": {
-		"0": "peyotamod:block/peyota_workbench_2",
-		"particle": "peyotamod:block/peyota_workbench_2"
+		"0": "peyotamod:block/peyota_workbench_2"
 	},
 	"elements": [
 		{
