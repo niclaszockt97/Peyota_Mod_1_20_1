@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_log"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "peyotamod:peyota_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "III"
+  ],
+  "result": {
+    "item": "peyotamod:peyota_workbench",
+    "count": 1
+  },
+  "show_notification": true
+}
