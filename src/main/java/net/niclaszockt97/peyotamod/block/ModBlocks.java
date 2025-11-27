@@ -10,6 +10,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.niclaszockt97.peyotamod.PeyotaMod;
+import net.niclaszockt97.peyotamod.block.custom.WorkbenchBlock;
+import net.niclaszockt97.peyotamod.block.custom.Workbench_2Block;
 import net.niclaszockt97.peyotamod.item.ModItems;
 
 
@@ -20,10 +22,10 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH =registerBlock("peyota_workbench",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
+            () -> new WorkbenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH_2 =registerBlock("peyota_workbench_2",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
+            () -> new Workbench_2Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
     private static  <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
