@@ -1,4 +1,4 @@
-package net.niclaszockt97.peyotamod1201.item;
+package net.niclaszockt97.peyotamod.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -6,7 +6,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.niclaszockt97.peyotamod1201.PeyotaMod;
+import net.niclaszockt97.peyotamod.PeyotaMod;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =

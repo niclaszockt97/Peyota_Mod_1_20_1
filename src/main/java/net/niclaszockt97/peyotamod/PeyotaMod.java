@@ -1,5 +1,5 @@
 //TODO:
-package net.niclaszockt97.peyotamod1201;
+package net.niclaszockt97.peyotamod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -12,9 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.niclaszockt97.peyotamod1201.block.ModBlocks;
-import net.niclaszockt97.peyotamod1201.item.ModCreativeModTabs;
-import net.niclaszockt97.peyotamod1201.item.ModItems;
+import net.niclaszockt97.peyotamod.block.ModBlocks;
+import net.niclaszockt97.peyotamod.item.ModCreativeModTabs;
+import net.niclaszockt97.peyotamod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

@@ -1,4 +1,4 @@
-package net.niclaszockt97.peyotamod1201.block;
+package net.niclaszockt97.peyotamod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,8 +9,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.niclaszockt97.peyotamod1201.PeyotaMod;
-import net.niclaszockt97.peyotamod1201.item.ModItems;
+import net.niclaszockt97.peyotamod.PeyotaMod;
+import net.niclaszockt97.peyotamod.item.ModItems;
+
 
 import java.util.function.Supplier;
 

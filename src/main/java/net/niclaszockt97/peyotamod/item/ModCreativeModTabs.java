@@ -1,4 +1,4 @@
-package net.niclaszockt97.peyotamod1201.item;
+package net.niclaszockt97.peyotamod.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,8 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.niclaszockt97.peyotamod1201.PeyotaMod;
-import net.niclaszockt97.peyotamod1201.block.ModBlocks;
+import net.niclaszockt97.peyotamod.PeyotaMod;
+import net.niclaszockt97.peyotamod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TABS =
