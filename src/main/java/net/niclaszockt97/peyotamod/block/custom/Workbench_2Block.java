@@ -3,8 +3,6 @@ package net.niclaszockt97.peyotamod.block.custom;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
@@ -22,6 +20,8 @@ public class Workbench_2Block extends Block {
         super(properties);
     }
 
+
+
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player,
                                  InteractionHand hand, BlockHitResult hit) {
@@ -31,24 +31,11 @@ public class Workbench_2Block extends Block {
                 NetworkHooks.openScreen(serverPlayer,
                         new SimpleMenuProvider(
                                 (id, inv, extra) -> new FiveCustomCraftingMenu(id, inv),
-                                Component.literal("Worktable")
+                                Component.literal("")
                         ),
                         pos
                 );
             }
-
-            // Sound-Call mit Koordinaten
-            world.playSound(
-                    null,                                // Entity → null ist OK
-                    pos.getX() + 0.5,
-                    pos.getY() + 0.5,
-                    pos.getZ() + 0.5,
-                    SoundEvents.ALLAY_AMBIENT_WITHOUT_ITEM,     // SoundEvent – korrekt in 1.20.1
-                    SoundSource.BLOCKS,
-                    1f,
-                    1f
-            );
-
         }
 
         return InteractionResult.sidedSuccess(world.isClientSide);

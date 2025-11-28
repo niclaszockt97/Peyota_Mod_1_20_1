@@ -30,4 +30,9 @@ public class FiveCustomCraftingScreen extends AbstractContainerScreen<FiveCustom
         super.render(guiGraphics, mouseX, mouseY, delta);
         this.renderTooltip(guiGraphics, mouseX, mouseY);
     }
+
+    @Override
+    protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+        // Wir wollen keine Texte wie "Inventory" oder den Titel anzeigen
+    }
 }
