@@ -1,46 +1,44 @@
 package net.niclaszockt97.peyotamod.block.custom;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.network.NetworkHooks;
-import net.niclaszockt97.peyotamod.menu.FiveCustomCraftingMenu;
 
 public class Workbench_2Block extends Block {
-
-    public Workbench_2Block(Properties properties) {
-        super(properties);
+    public Workbench_2Block(Properties pProperties) {
+        super(pProperties);
     }
-
-
 
     @Override
-    public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player,
-                                 InteractionHand hand, BlockHitResult hit) {
+    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
 
-        if (!world.isClientSide) { // Server
-            if (player instanceof ServerPlayer serverPlayer) {
-                NetworkHooks.openScreen(serverPlayer,
-                        new SimpleMenuProvider(
-                                (id, inv, extra) -> new FiveCustomCraftingMenu(id, inv),
-                                Component.literal("")
-                        ),
-                        pos
-                );
-            }
-        }
+        //Biomanzeige
+        BlockPos pos = BlockPos.ZERO;
+        Holder<Biome> biomeHolder = pLevel.getBiome(pos);
+        pPlayer.displayClientMessage(
+                Component.literal("Biome-ID: " + biomeHolder.unwrapKey().get().location()).withStyle(ChatFormatting.AQUA),
+                false
+        );
 
-        return InteractionResult.sidedSuccess(world.isClientSide);
+        int level_p = pPlayer.getXpNeededForNextLevel();
+        pPlayer.displayClientMessage(
+                Component.literal("XP To next LV.: " + level_p).withStyle(ChatFormatting.AQUA),
+                false
+        );
+
+
+        pLevel.playSound(pPlayer, pPos, SoundEvents.NOTE_BLOCK_BANJO.get(), SoundSource.BLOCKS, 1f, 4f);
+        return InteractionResult.SUCCESS;
     }
-
-
-
 }

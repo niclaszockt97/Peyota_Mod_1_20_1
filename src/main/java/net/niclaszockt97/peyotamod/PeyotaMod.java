@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.niclaszockt97.peyotamod.block.ModBlocks;
 import net.niclaszockt97.peyotamod.item.ModCreativeModTabs;
 import net.niclaszockt97.peyotamod.item.ModItems;
+import net.niclaszockt97.peyotamod.menu.ModMenus;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -37,6 +38,9 @@ public class PeyotaMod
 
         modEventBus.addListener(this::commonSetup);
 
+        ModMenus.MENUS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
@@ -51,18 +55,26 @@ public class PeyotaMod
 
     }
 
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
     }
 
+
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            event.enqueueWork(() -> {
+                net.minecraft.client.gui.screens.MenuScreens.register(
+                        net.niclaszockt97.peyotamod.menu.ModMenus.FIVE_CUSTOM_CRAFTING.get(),
+                        net.niclaszockt97.peyotamod.screen.FiveCustomCraftingScreen::new
+                );
+            });
         }
     }
 }
+
