@@ -24,7 +24,13 @@ public class ModItems {
                     .rarity(Rarity.COMMON)
             ));
 
+    public static final RegistryObject<Item> PEYOTA_ROD = ITEMS.register("peyota_rod",
+            () -> new PeyotaRod(new Item.Properties()
+            )
+    );
+
     public static void register(IEventBus eventBus) {
+
         ITEMS.register(eventBus);
     }
 }

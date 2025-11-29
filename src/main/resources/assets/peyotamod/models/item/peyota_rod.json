@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "peyotamod:item/peyota_brush",
+    "particle": "peyotamod:item/peyota_rod"
+  },
+  "elements": [
+    {
+      "from": [7, 0, 7],
+      "to": [9, 6, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [-1, 0, -1]},
+      "faces": {
+        "north": {"uv": [0, 0, 2, 6], "texture": "#layer0"},
+        "east": {"uv": [2, 0, 4, 6], "texture": "#layer0"},
+        "south": {"uv": [4, 0, 6, 6], "texture": "#layer0"},
+        "west": {"uv": [0, 6, 2, 12], "texture": "#layer0"},
+        "up": {"uv": [12, 6, 10, 4], "texture": "#layer0"},
+        "down": {"uv": [12, 6, 10, 8], "texture": "#layer0"}
+      }
+    },
+    {
+      "from": [6, 6, 7],
+      "to": [8, 9, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [6, 6, 7]},
+      "faces": {
+        "north": {"uv": [6, 6, 8, 9], "texture": "#layer0"},
+        "east": {"uv": [2, 8, 4, 11], "texture": "#layer0"},
+        "south": {"uv": [4, 8, 6, 11], "texture": "#layer0"},
+        "west": {"uv": [8, 6, 10, 9], "texture": "#layer0"},
+        "up": {"uv": [4, 13, 2, 11], "texture": "#layer0"},
+        "down": {"uv": [6, 11, 4, 13], "texture": "#layer0"}
+      }
+    },
+    {
+      "from": [3, 8, 8],
+      "to": [6, 10, 10],
+      "rotation": {"angle": -45, "axis": "z", "origin": [6, 8, 8]},
+      "faces": {
+        "north": {"uv": [6, 9, 9, 11], "texture": "#layer0"},
+        "east": {"uv": [6, 11, 8, 13], "texture": "#layer0"},
+        "south": {"uv": [9, 9, 12, 11], "texture": "#layer0"},
+        "west": {"uv": [8, 11, 10, 13], "texture": "#layer0"},
+        "up": {"uv": [13, 2, 10, 0], "texture": "#layer0"},
+        "down": {"uv": [13, 2, 10, 4], "texture": "#layer0"}
+      }
+    },
+    {
+      "from": [6, 7, 6],
+      "to": [10, 9, 8],
+      "rotation": {"angle": 22.5, "axis": "z", "origin": [6, 9, 6]},
+      "faces": {
+        "north": {"uv": [6, 0, 10, 2], "texture": "#layer0"},
+        "east": {"uv": [10, 11, 12, 13], "texture": "#layer0"},
+        "south": {"uv": [2, 6, 6, 8], "texture": "#layer0"},
+        "west": {"uv": [0, 12, 2, 14], "texture": "#layer0"},
+        "up": {"uv": [10, 4, 6, 2], "texture": "#layer0"},
+        "down": {"uv": [10, 4, 6, 6], "texture": "#layer0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 7.5, 0]
+    }
+  }
+}

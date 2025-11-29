@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         //Items in Creative Tab einfügen.
                         pOutput.accept(ModBlocks.PEYOTA_WORKBENCH.get());
                         pOutput.accept(ModBlocks.PEYOTA_WORKBENCH_2.get());
+                        pOutput.accept(ModItems.PEYOTA_ROD.get());
                         pOutput.accept(ModItems.PEYOTA_NUGGET.get());
                         pOutput.accept(ModItems.PEYOTA_BRUSH.get());
                     })
