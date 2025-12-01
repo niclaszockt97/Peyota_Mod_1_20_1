@@ -1,8 +1,15 @@
 {
   "creativetab.peyota_tab": "Peyota",
 
+  "tooltip.peyotamod.peyota_rod": "Shows Player cords and cords you are looking at.",
+  "tooltip.peyotamod.peyota_workbench_2": "A 5x5 Crafting Grid.",
+
+
+
   "block.peyotamod.peyota_workbench": "Workbench",
   "block.peyotamod.peyota_workbench_2": "Worktable",
+
+
   "item.peyotamod.peyota_rod": "Rod",
   "item.peyotamod.peyota_nugget": "Peyota Nugget",
   "item.peyotamod.peyota_brush": "Brush"

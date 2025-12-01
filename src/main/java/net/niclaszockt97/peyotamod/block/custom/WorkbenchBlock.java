@@ -26,8 +26,7 @@ public class WorkbenchBlock extends Block {
                                  Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
 
         //Display current Biom in chat
-        BlockPos pos = BlockPos.ZERO;
-        Holder<Biome> biomeHolder = pLevel.getBiome(pos);
+        Holder<Biome> biomeHolder = pLevel.getBiome(pPos);
         pPlayer.displayClientMessage(
                 Component.literal("Biome-ID: " + biomeHolder.unwrapKey().get().location()).withStyle(ChatFormatting.AQUA),
                 false
