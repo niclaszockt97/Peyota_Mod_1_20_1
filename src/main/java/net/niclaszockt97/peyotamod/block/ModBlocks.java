@@ -5,6 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,15 +24,10 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH =registerBlock("peyota_workbench",
-            () -> new WorkbenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)
-                    .noOcclusion()
-            )
-    );
+            () -> new WorkbenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH_2 =registerBlock("peyota_workbench_2",
-            () -> new Workbench_2Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)
-                    .noOcclusion()
-            ));
+            () -> new Workbench_2Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
     private static  <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
