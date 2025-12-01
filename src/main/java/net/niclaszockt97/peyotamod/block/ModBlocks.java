@@ -24,10 +24,15 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH =registerBlock("peyota_workbench",
-            () -> new WorkbenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
+            () -> new WorkbenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)
+                    .noOcclusion()
+            )
+    );
 
     public static final RegistryObject<Block> PEYOTA_WORKBENCH_2 =registerBlock("peyota_workbench_2",
-            () -> new Workbench_2Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
+            () -> new Workbench_2Block(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)
+                    .noOcclusion()
+            ));
 
     private static  <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
